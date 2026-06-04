@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal ISC – UCATECI</title>
+  <link rel="icon" href="Images/Logo-UCATECI-3.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="header-brand">
+      <img src="Images/Logo-UCATECI.png" alt="UCATECI" class="header-logo">
+      <div class="header-divider"></div>
+      <div class="header-title">
+        <span class="header-career">Ingeniería en Sistemas</span>
+        <span class="header-sub">Portal Estudiantil · ISC</span>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio"    class="nav-link active" data-section="inicio">    <i class="ph ph-house"></i>        Inicio</a>
+      <a href="#perfil"    class="nav-link"         data-section="perfil">   <i class="ph ph-graduation-cap"></i> Perfil</a>
+      <a href="#recursos"  class="nav-link"         data-section="recursos"> <i class="ph ph-books"></i>          Recursos</a>
+      <a href="#plan"      class="nav-link"         data-section="plan">     <i class="ph ph-map-trifold"></i>    Plan Académico</a>
+      <a href="#tareas"    class="nav-link"         data-section="tareas">   <i class="ph ph-check-square"></i>   Mis Tareas</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <i class="ph ph-list"></i>
+    </button>
+  </div>
+</header>
+
+<main class="main-content">
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 1 · INICIO
+══════════════════════════════════════════ -->
+<section class="section active" id="inicio">
+  <div class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow g1"></div>
+      <div class="hero-glow g2"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Bienvenido al Portal<br><span>de Ingeniería en Sistemas</span></h1>
+      <p class="hero-desc">Tu punto de acceso centralizado a la información académica, recursos de estudio y herramientas de organización para la carrera de Ingeniería en Sistemas de Computación de UCATECI.</p>
+    </div>
+    <div class="hero-visual">
+      <img src="Images/Logo-UCATECI-3.png" alt="UCATECI Escudo" class="hero-escudo">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ph ph-books"></i></div>
+        <div class="stat-info">
+          <span class="stat-num">237</span>
+          <span class="stat-label">Créditos totales</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ph ph-calendar"></i></div>
+        <div class="stat-info">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Cuatrimestres</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ph ph-desktop"></i></div>
+        <div class="stat-info">
+          <span class="stat-num">ISC</span>
+          <span class="stat-label">Código de carrera</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ph ph-certificate"></i></div>
+        <div class="stat-info">
+          <span class="stat-num">Ing.</span>
+          <span class="stat-label">Título otorgado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card accent-card">
+        <div class="info-card-icon"><i class="ph ph-target"></i></div>
+        <h3>Misión de la Carrera</h3>
+        <p>Formar ingenieros en sistemas con sólidas bases científicas y tecnológicas, capaces de diseñar, desarrollar e implementar soluciones informáticas que respondan a las necesidades del país y la región.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon"><i class="ph ph-eye"></i></div>
+        <h3>Visión</h3>
+        <p>Ser una carrera de excelencia académica reconocida a nivel nacional, que produce profesionales íntegros, innovadores y competitivos en el campo de la tecnología de la información.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon"><i class="ph ph-map-pin"></i></div>
+        <h3>Sede</h3>
+        <p>Universidad Católica del Cibao – UCATECI<br>La Vega, República Dominicana<br>Fundada en 1983<br><em>"Progressio et Sapientia"</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 2 · PERFIL DE LA CARRERA
+══════════════════════════════════════════ -->
+<section class="section" id="perfil">
+  <div class="container">
+    <div class="section-header">
+      <h2>Perfil de la Carrera</h2>
+      <p>Ingeniería en Sistemas de Computación – UCATECI</p>
+    </div>
+
+    <div class="profile-hero">
+      <div class="profile-text">
+        <h3>¿Qué es Ingeniería en Sistemas?</h3>
+        <p>La carrera de Ingeniería en Sistemas de Computación forma profesionales con las competencias necesarias para analizar, diseñar, desarrollar, implementar y gestionar sistemas de información y soluciones tecnológicas de alta complejidad.</p>
+        <p>El programa académico abarca desde fundamentos matemáticos y físicos hasta programación avanzada, redes, bases de datos, seguridad informática y gestión de proyectos tecnológicos.</p>
+      </div>
+      <div class="profile-highlights">
+        <div class="highlight-item">
+          <i class="ph ph-clock"></i>
+          <div>
+            <strong>Duración</strong>
+            <span>4 años (12 cuatrimestres)</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <i class="ph ph-medal"></i>
+          <div>
+            <strong>Título</strong>
+            <span>Ingeniero/a en Sistemas de Computación</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <i class="ph ph-buildings"></i>
+          <div>
+            <strong>Modalidad</strong>
+            <span>Presencial – Campus La Vega</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <i class="ph ph-stack"></i>
+          <div>
+            <strong>Créditos totales</strong>
+            <span>237 créditos académicos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="comp-block">
+        <h3><i class="ph ph-lightning"></i> Competencias Profesionales</h3>
+        <ul class="comp-list">
+          <li><i class="ph ph-check-circle"></i> Diseño y desarrollo de software a medida</li>
+          <li><i class="ph ph-check-circle"></i> Administración de bases de datos</li>
+          <li><i class="ph ph-check-circle"></i> Gestión de redes y telecomunicaciones</li>
+          <li><i class="ph ph-check-circle"></i> Seguridad informática y auditoría de sistemas</li>
+          <li><i class="ph ph-check-circle"></i> Ingeniería del software y gestión de proyectos</li>
+          <li><i class="ph ph-check-circle"></i> Desarrollo de aplicaciones web y móviles</li>
+          <li><i class="ph ph-check-circle"></i> Análisis y diseño de sistemas de información</li>
+          <li><i class="ph ph-check-circle"></i> Administración de centros de datos</li>
+        </ul>
+      </div>
+      <div class="comp-block">
+        <h3><i class="ph ph-briefcase"></i> Campo Laboral</h3>
+        <ul class="comp-list">
+          <li><i class="ph ph-arrow-right"></i> Empresas de desarrollo de software</li>
+          <li><i class="ph ph-arrow-right"></i> Departamentos de tecnología en empresas</li>
+          <li><i class="ph ph-arrow-right"></i> Instituciones gubernamentales y bancarias</li>
+          <li><i class="ph ph-arrow-right"></i> Empresas de telecomunicaciones</li>
+          <li><i class="ph ph-arrow-right"></i> Consultorías tecnológicas</li>
+          <li><i class="ph ph-arrow-right"></i> Emprendimiento y startups tecnológicos</li>
+          <li><i class="ph ph-arrow-right"></i> Docencia universitaria y capacitación</li>
+          <li><i class="ph ph-arrow-right"></i> Administración de infraestructura IT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 3 · RECURSOS ACADÉMICOS
+══════════════════════════════════════════ -->
+<section class="section" id="recursos">
+  <div class="container">
+    <div class="section-header">
+      <h2>Recursos Académicos</h2>
+      <p>Herramientas y materiales de apoyo para tu desarrollo profesional</p>
+    </div>
+
+    <div class="sub-section-title"><i class="ph ph-wrench"></i> Herramientas de Estudio</div>
+    <div class="tools-grid" id="toolsGrid">
+      <!-- Generated by JS -->
+    </div>
+
+    <div class="sub-section-title" style="margin-top:3rem"><i class="ph ph-books"></i> Asignaturas Clave de la Carrera</div>
+    <div class="subjects-grid">
+      <div class="subject-card">
+        <div class="subject-icon s-prog"><i class="ph ph-code"></i></div>
+        <h4>Programación</h4>
+        <p>Desde algoritmos estructurados hasta Programación IV, cubriendo paradigmas estructurado, orientado a objetos y web.</p>
+        <span class="subject-tag">ISC 004 → ISC 101</span>
+      </div>
+      <div class="subject-card">
+        <div class="subject-icon s-db"><i class="ph ph-database"></i></div>
+        <h4>Bases de Datos</h4>
+        <p>Diseño, implementación y administración de bases de datos relacionales con énfasis en aplicaciones empresariales.</p>
+        <span class="subject-tag">ISC 087 · ISC 095 · ISC 099</span>
+      </div>
+      <div class="subject-card">
+        <div class="subject-icon s-net"><i class="ph ph-network"></i></div>
+        <h4>Redes y Telemática</h4>
+        <p>Fundamentos de redes, telemática I y II para diseñar e implementar infraestructuras de comunicaciones.</p>
+        <span class="subject-tag">ISC 093 · ISC 103 · ISC 028</span>
+      </div>
+      <div class="subject-card">
+        <div class="subject-icon s-sys"><i class="ph ph-hard-drives"></i></div>
+        <h4>Sistemas Operativos</h4>
+        <p>Gestión de procesos, memoria, sistemas de archivos y administración avanzada de servidores y entornos virtuales.</p>
+        <span class="subject-tag">ISC 075 · ISC 081</span>
+      </div>
+      <div class="subject-card">
+        <div class="subject-icon s-sec"><i class="ph ph-shield-check"></i></div>
+        <h4>Seguridad Informática</h4>
+        <p>Auditoría de sistemas, protección de infraestructura y mejores prácticas en ciberseguridad empresarial.</p>
+        <span class="subject-tag">ISC 055 · ISC 121</span>
+      </div>
+      <div class="subject-card">
+        <div class="subject-icon s-web"><i class="ph ph-globe"></i></div>
+        <h4>Desarrollo Web y Móvil</h4>
+        <p>Programación web moderna y desarrollo de aplicaciones para dispositivos móviles con metodologías actuales.</p>
+        <span class="subject-tag">ISC 107 · ISC 115</span>
+      </div>
+    </div>
+
+    <div class="sub-section-title" style="margin-top:3rem"><i class="ph ph-link"></i> Enlaces de Aprendizaje</div>
+    <div class="links-grid">
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-globe"></i></div>
+        <div class="rl-info"><strong>Portal UCATECI</strong><span>Sitio oficial de la universidad</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-video"></i></div>
+        <div class="rl-info"><strong>Tutoriales de Programación</strong><span>Cursos y guías en video</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-book-open"></i></div>
+        <div class="rl-info"><strong>Biblioteca Digital</strong><span>Libros y documentación técnica</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-chalkboard-teacher"></i></div>
+        <div class="rl-info"><strong>Aula Virtual</strong><span>Plataforma de aprendizaje en línea</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-github-logo"></i></div>
+        <div class="rl-info"><strong>Repositorios de Código</strong><span>Proyectos y ejemplos prácticos</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+      <a class="resource-link" href="#" onclick="return false">
+        <div class="rl-icon"><i class="ph ph-certificate"></i></div>
+        <div class="rl-info"><strong>Certificaciones Técnicas</strong><span>Rutas de certificación sugeridas</span></div>
+        <i class="ph ph-arrow-square-out rl-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 4 · PLAN ACADÉMICO
+══════════════════════════════════════════ -->
+<section class="section" id="plan">
+  <div class="container">
+    <div class="section-header">
+      <h2>Plan Académico ISC</h2>
+      <p>Materias de carrera (ISC) – Marca las que ya cursaste respetando los prerrequisitos</p>
+    </div>
+
+    <div class="plan-progress-bar-wrap">
+      <div class="plan-progress-info">
+        <span id="planCount">0 / 0 materias cursadas</span>
+        <span id="planPct">0%</span>
+      </div>
+      <div class="plan-progress-track">
+        <div class="plan-progress-fill" id="planFill"></div>
+      </div>
+    </div>
+
+    <div class="plan-legend">
+      <span class="leg-item"><span class="leg-dot ld-done"></span>Cursada</span>
+      <span class="leg-item"><span class="leg-dot ld-avail"></span>Disponible</span>
+      <span class="leg-item"><span class="leg-dot ld-locked"></span>Bloqueada (requiere prerrequisito)</span>
+    </div>
+
+    <div class="plan-accordion" id="planAccordion">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SECCIÓN 5 · MIS TAREAS
+══════════════════════════════════════════ -->
+<section class="section" id="tareas">
+  <div class="container">
+    <div class="section-header">
+      <h2>Mis Tareas Académicas</h2>
+      <p>Organiza y gestiona tus tareas y entregas pendientes</p>
+    </div>
+
+    <div class="task-top">
+      <div class="task-stats-row">
+        <div class="task-stat ts-total">
+          <i class="ph ph-list-checks"></i>
+          <div><span id="tTotal">0</span><small>Total</small></div>
+        </div>
+        <div class="task-stat ts-pending">
+          <i class="ph ph-hourglass"></i>
+          <div><span id="tPending">0</span><small>Pendientes</small></div>
+        </div>
+        <div class="task-stat ts-done">
+          <i class="ph ph-check-circle"></i>
+          <div><span id="tDone">0</span><small>Completadas</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="task-form-card" id="taskFormCard">
+      <div class="task-form-title" id="taskFormTitle">
+        <i class="ph ph-plus-circle"></i> Nueva Tarea
+      </div>
+      <div class="task-form-grid">
+        <div class="form-group">
+          <label for="tName"><i class="ph ph-tag"></i> Nombre de la tarea</label>
+          <input type="text" id="tName" placeholder="Ej: Proyecto de Programación III">
+        </div>
+        <div class="form-group">
+          <label for="tDate"><i class="ph ph-calendar"></i> Fecha de entrega</label>
+          <input type="date" id="tDate">
+        </div>
+        <div class="form-group form-full">
+          <label for="tDesc"><i class="ph ph-note"></i> Descripción breve</label>
+          <textarea id="tDesc" placeholder="Detalla los objetivos o requisitos de la tarea..." rows="3"></textarea>
+        </div>
+      </div>
+      <div class="task-form-actions">
+        <button class="btn-primary" id="btnAddTask"><i class="ph ph-plus"></i> Agregar Tarea</button>
+        <button class="btn-ghost" id="btnCancelEdit" style="display:none"><i class="ph ph-x"></i> Cancelar</button>
+        <button class="btn-update" id="btnUpdateTask" style="display:none"><i class="ph ph-check"></i> Guardar Cambios</button>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="pending">Pendientes</button>
+      <button class="filter-btn" data-filter="done">Completadas</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="tasks-grid" id="tasksGrid">
+      <div class="tasks-empty" id="tasksEmpty">
+        <i class="ph ph-clipboard-text"></i>
+        <p>No hay tareas registradas</p>
+        <small>Agrega tu primera tarea arriba</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bg">
+    <div class="footer-grid"></div>
+  </div>
+  
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="Images/Logo-UCATECI-3.png" alt="UCATECI" class="footer-logo">
+        <div>
+          <div class="footer-name">UCATECI – Portal ISC</div>
+          <div class="footer-sub">Universidad Católica del Cibao · La Vega, R.D.</div>
+        </div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" class="social-link" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+        <a href="#" class="social-link" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#" class="social-link" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="#" class="social-link" title="Portal Web"><i class="ph ph-globe"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2026 Ingeniería en Sistemas de Computación.
+      </div>
+      <div class="footer-credit">
+        Desarrollado por <span>José Félix De Los Santos</span> &nbsp;·&nbsp; Matrícula: <span>2024-1135</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
