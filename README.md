@@ -2,7 +2,7 @@
 
 ## Academic Information
 
-**Course:** Mobile Device Programming
+**Course:** Programming III
 
 **Professor:** Emilio Peña
 
